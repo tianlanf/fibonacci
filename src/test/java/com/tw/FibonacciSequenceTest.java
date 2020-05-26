@@ -19,4 +19,16 @@ public class FibonacciSequenceTest {
         long result = counter.getFibonacciNumber(1);
         assertEquals(1L, result);
     }
+
+    @Test
+    public void shouldReturnFibonacciCorrectlyGivenInputIsLargerThan2() {
+        long result = counter.getFibonacciNumber(3);
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void shouldReturnFibonacciCorrectlyGivenInputIs50 () {
+        long result = counter.getFibonacciNumber(50);
+        assertEquals(12586269025L, result);
+    }
 }
